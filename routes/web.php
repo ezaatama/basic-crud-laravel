@@ -22,3 +22,6 @@ Route::get('/delete-data/{id}', [EmployeeController::class, 'deletedata'])->name
 
 //EXPORT PDF
 Route::get('/exportpdf', [EmployeeController::class, 'exportpdf'])->name('exportpdf');
+
+//EXPORT EXCEL
+Route::get('/exportexcel', [EmployeeController::class, 'exportexcel'])->name('exportexcel');
